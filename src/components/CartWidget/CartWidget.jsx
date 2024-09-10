@@ -3,9 +3,14 @@ import{
     Flex,
 } from '@chakra-ui/react'
 import { FaOpencart } from "react-icons/fa6";
-const CartWidget = () =>{
+export const CartWidget = () =>{
     return(
-        <Flex alignItems={"center"} >
+        <Flex 
+            alignItems={"center"} 
+            height={"100%"}
+            justifyContent={"space-between"}
+            width={"50px"}
+        >
         <FaOpencart  size={"20"}/>   
         <Text>0</Text>
         </Flex>
@@ -13,4 +18,3 @@ const CartWidget = () =>{
     )
 }
 
-export default CartWidget;

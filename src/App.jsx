@@ -1,11 +1,13 @@
-import React from "react"
+import {useEffect} from "react"
 import { ChakraProvider } from "@chakra-ui/react";
-import NavBar from "./components/NavBar/NavBar";
+import { MainRouter } from "./routes";
+import { ItemListContainer } from "./components";
 
 function App() {
+
   return (
     <ChakraProvider>
-      <NavBar />
+      <MainRouter/>
     </ChakraProvider>
   );
 }
